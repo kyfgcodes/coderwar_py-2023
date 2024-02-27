@@ -6,11 +6,11 @@ After your function finds the needle it should return a message (as a string) th
 
 "found the needle at position " plus the index it found the needle'''
 
-def find_needle(haystacks):
+def find_needle(haystack):
     
-    for i in haystacks:
+    for i in haystack:
         if i == 'needle':
-            return f'found the needle at position {haystacks.index(i)}'
+            return f'found the needle at position {haystack.index(i)}'
 
 print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))
 
